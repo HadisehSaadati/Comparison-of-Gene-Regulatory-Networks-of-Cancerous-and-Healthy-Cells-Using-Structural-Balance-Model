@@ -6,16 +6,25 @@ This project investigates how structural balance evolves under increasing disord
 
 ## Balance Theory
 
-Structural Balance Theory, introduced by Fritz Heider in 1946 (Heider, Fritz. “Attitudes and cognitive organization.” The Journal of Psychology 21 (1946)), describes how positive and negative relationships between nodes in a signed network can generate structural tension. The balance of a relationship between two nodes depends not only on their direct connection but also on their relationships with a third node.
-In this framework, triangles are the fundamental units of structural balance. A network is considered balanced when all its triangles are balanced, corresponding to either a paradise configuration, in which all links are positive, or a bipolar configuration, in which nodes divide into two groups with positive links within each group and negative links between them. Imbalanced triangles generate structural tension and tend to evolve toward balanced configurations through changes in link signs.
+Structural Balance Theory, introduced by Fritz Heider in 1946 (***Heider, Fritz. “Attitudes and cognitive organization.” The Journal of Psychology 21 (1946)***), describes how positive and negative relationships between nodes in a signed network can generate structural tension. The balance of a relationship between two nodes depends not only on their direct connection but also on their relationships with a third node.
+In this framework, triangles are the fundamental units of structural balance. A network is considered balanced when all its triangles are balanced, corresponding to either a **paradise configuration**, in which all links are positive, or a **bipolar configuration**, in which nodes divide into two groups with positive links within each group and negative links between them. Imbalanced triangles generate structural tension and tend to evolve toward balanced configurations through changes in link signs.
 
 ## Non-Zero Structural Balance Model
 
-The non-zero-temperature structural balance model introduces a temperature parameter to control disorder in the network. Temperature governs the persistence of imbalanced triangles through a Boltzmann–Gibbs probability distribution: at lower temperatures, imbalanced configurations are less likely to persist, favoring structural balance, while higher temperatures allow greater disorder and tension in the network.
+The non-zero-temperature structural balance model introduces a temperature parameter to control disorder in the network. Temperature governs the persistence of imbalanced triangles through a **Boltzmann–Gibbs probability distribution: at lower temperatures, imbalanced configurations are less likely to persist, favoring structural balance, while higher temperatures allow greater disorder and tension in the network**.
 The Hamiltonian of the structural balance model describes the energy associated with the signed triangles in a network:
-Here, 𝑠𝑖𝑗 denotes the sign of the link between nodes 𝑖 and 𝑗, while 𝐽𝑖𝑗𝑘 represents the weight assigned to the triangle formed by nodes 𝑖, 𝑗, and 𝑘. The Hamiltonian sums the contributions of all triangles, accounting for their signs and weights, and is normalized by the total absolute weight of the triangles. The negative sign ensures that balanced configurations correspond to lower energy, favoring structural balance as the system approaches its energy minimum.
-Applying the mean-field approximation to this Hamiltonian allows several key quantities characterizing the structural balance model to be derived.
-The order parameter q characterizes the structural state of the network. E defines the network energy as the average contribution of its triangles, providing a measure of structural balance. By examining how these quantities vary with temperature, we can investigate the network’s transition between ordered and disordered states.
+
+![eq.1](equations)
+
+Here, **𝑠𝑖𝑗** denotes the sign of the link between nodes **𝑖** and **𝑗**, while **𝐽𝑖𝑗𝑘** represents the weight assigned to the triangle formed by nodes **𝑖**, **𝑗**, and **𝑘**. The Hamiltonian sums the contributions of all triangles, accounting for their signs and weights, and is normalized by the total absolute weight of the triangles. The negative sign ensures that balanced configurations correspond to lower energy, favoring structural balance as the system approaches its energy minimum.
+Applying the **mean-field approximation** to this Hamiltonian allows several key quantities characterizing the structural balance model to be derived.
+The order parameter **q** (mean of two-stars) characterizes the structural state of the network derived like this:
+
+![eq.2](equations/eq2)
+
+![eq.3](equations/eq3)
+
+E defines the network energy as the average contribution of its triangles, providing a measure of structural balance. By examining how these quantities vary with temperature, we can investigate the network’s transition between ordered and disordered states.
 
 # Data
 
